@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <h2>📘 Attendance Tracker</h2>
+
+  <h3>Add Subject</h3>
+  <input type="text" id="subjectInput" placeholder="e.g. Physics">
+  <button onclick="addSubject()">Add Subject</button>
+
+  <h3>Mark Attendance</h3>
+  <select id="subjectSelect"></select>
+  <input type="date" id="dateInput">
+  <select id="statusSelect">
+    <option value="present">✅ Present</option>
+    <option value="absent">❌ Absent</option>
+  </select>
+  <button onclick="markAttendance()">Mark Attendance</button>
+
+
+  <h3>📅 Attendance Records</h3>
+  <div id="attendanceDisplay"></div>
+
+  <h3>🧼 Reset</h3>
+  <button onclick="clearData()">Clear All Attendance Data</button>
+</body>
+
+</html>
